@@ -51,4 +51,23 @@ head(penguins)
 penguins
 install.packages("tidyverse")
 library(library)
-install.packages
+install.packages("magrittr")
+library(magrittr)
+install.packages()
+penguins %>%
+    filter(species == "Adelie") %>%
+    select(species, island, bill_length_mm) %>%
+    arrange(desc(bill_length_mm)) %>%
+    head(10)
+
+View(penguins)
+??Palmerpenguins
+
+library(palmerpenguins)
+library(dplyr)
+library(magrittr)
+library(tidyverse)
+library(ggplot2)
+
+summary(penguins)
+summary(penguins$species)
